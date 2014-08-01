@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="272613d6-1c4d-4c60-9122-f53009567d7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/empty_string_search.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/test/empty_string_search_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/group_anagram.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/test/group_anagram_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/insert_rank.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/test/insert_rank_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/lis.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/test/lis_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/merge_subarray.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/test/merge_subarray_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/rotation_search.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/test/rotation_search_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/sorted_matrix_search.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sorting_searching/test/sorted_matrix_search_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moderate/largest_contiguous_sum.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moderate/test/largest_contiguous_sum_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moderate/min_m_n_sort.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moderate/test/min_m_n_sort_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moderate/swap_without_tmp.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moderate/test/swap_without_tmp_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moderate/trailing_zeros_factorial.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moderate/test/trailing_zeros_factorial_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moderate/two_sum.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moderate/test/two_sum_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ctci.iml" afterPath="$PROJECT_DIR$/.idea/ctci.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -53,13 +49,18 @@
     <SUITE FILE_PATH="coverage/ctci@rotate_string_test.coverage" NAME="rotate_string_test Coverage Results" MODIFIED="1406003903638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/arrays_strings/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@longest_incresing_subsequence_test.coverage" NAME="longest_incresing_subsequence_test Coverage Results" MODIFIED="1406701726433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@linked_list.coverage" NAME="linked_list Coverage Results" MODIFIED="1406142914048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linked_lists" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@largest_contiguous_sum_test.coverage" NAME="largest_contiguous_sum_test Coverage Results" MODIFIED="1406837890491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moderate/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@min_m_n_sort_test.coverage" NAME="min_m_n_sort_test Coverage Results" MODIFIED="1406784212121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moderate/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@stack_with_sort_test.coverage" NAME="stack_with_sort_test Coverage Results" MODIFIED="1406250178639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stacks_queues/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@queue_two_stacks_test.coverage" NAME="queue_two_stacks_test Coverage Results" MODIFIED="1406248559482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stacks_queues/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@magic_index_helper.coverage" NAME="magic_index_helper Coverage Results" MODIFIED="1406592142772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursion_dp/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@stack_with_min_test.coverage" NAME="stack_with_min_test Coverage Results" MODIFIED="1406241082192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stacks_queues/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@empty_string_search_test.coverage" NAME="empty_string_search_test Coverage Results" MODIFIED="1406684897522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@two_sum_test.coverage" NAME="two_sum_test Coverage Results" MODIFIED="1406865345478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moderate/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@swap_without_tmp_test.coverage" NAME="swap_without_tmp_test Coverage Results" MODIFIED="1406766605951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moderate/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@hanoi_test.coverage" NAME="hanoi_test Coverage Results" MODIFIED="1406247807679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stacks_queues/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@permutation_test.coverage" NAME="permutation_test Coverage Results" MODIFIED="1406593331331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursion_dp/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@trailing_zeros_factorial_test.coverage" NAME="trailing_zeros_factorial_test Coverage Results" MODIFIED="1406768770529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moderate/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@sorted_array_bst_min_height_test.coverage" NAME="sorted_array_bst_min_height_test Coverage Results" MODIFIED="1406317002022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trees_graphs/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@rotate_test.coverage" NAME="rotate_test Coverage Results" MODIFIED="1405998462344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/arrays_strings/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@group_anagram_test.coverage" NAME="group_anagram_test Coverage Results" MODIFIED="1406659838463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
@@ -76,28 +77,7 @@
     <favorites_list name="ctci" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="insert_rank.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sorting_searching/insert_rank.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.71517026" vertical-offset="814" max-vertical-offset="1540">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insert_rank_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sorting_searching/test/insert_rank_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -110,17 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/stacks_queues/hanoi.rb" />
-        <option value="$PROJECT_DIR$/stacks_queues/queue_two_stacks.rb" />
-        <option value="$PROJECT_DIR$/stacks_queues/test/queue_two_stacks_test.rb" />
-        <option value="$PROJECT_DIR$/stacks_queues/stack_with_sort.rb" />
-        <option value="$PROJECT_DIR$/stacks_queues/test/stack_with_sort_test.rb" />
-        <option value="$PROJECT_DIR$/stacks_queues/CatDogQueue.rb" />
-        <option value="$PROJECT_DIR$/stacks_queues/cat.rb" />
-        <option value="$PROJECT_DIR$/stacks_queues/dog.rb" />
-        <option value="$PROJECT_DIR$/stacks_queues/test/cat_dog_queue_test.rb" />
-        <option value="$PROJECT_DIR$/trees_graphs/directed_graph.rb" />
-        <option value="$PROJECT_DIR$/trees_graphs/depth_first_path.rb" />
         <option value="$PROJECT_DIR$/trees_graphs/test/directed_graph_test.rb" />
         <option value="$PROJECT_DIR$/trees_graphs/sorted_array_bst_min_height.rb" />
         <option value="$PROJECT_DIR$/trees_graphs/test/sorted_array_bst_min_height_test.rb" />
@@ -161,6 +130,17 @@
         <option value="$PROJECT_DIR$/sorting_searching/lis.rb" />
         <option value="$PROJECT_DIR$/sorting_searching/test/insert_rank_test.rb" />
         <option value="$PROJECT_DIR$/sorting_searching/insert_rank.rb" />
+        <option value="$PROJECT_DIR$/moderate/swap_without_tmp.rb" />
+        <option value="$PROJECT_DIR$/moderate/test/swap_without_tmp_test.rb" />
+        <option value="$PROJECT_DIR$/moderate/test/trailing_zeros_factorial_test.rb" />
+        <option value="$PROJECT_DIR$/moderate/trailing_zeros_factorial.rb" />
+        <option value="$PROJECT_DIR$/moderate/min_m_n_sort.rb" />
+        <option value="$PROJECT_DIR$/moderate/integer_english_phrase.rb" />
+        <option value="$PROJECT_DIR$/moderate/test/min_m_n_sort_test.rb" />
+        <option value="$PROJECT_DIR$/moderate/largest_contiguous_sum.rb" />
+        <option value="$PROJECT_DIR$/moderate/test/largest_contiguous_sum_test.rb" />
+        <option value="$PROJECT_DIR$/moderate/test/two_sum_test.rb" />
+        <option value="$PROJECT_DIR$/moderate/two_sum.rb" />
       </list>
     </option>
   </component>
@@ -213,8 +193,18 @@
               <option name="myItemId" value="ctci" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="trees_graphs" />
+              <option name="myItemId" value="ctci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ctci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moderate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,21 +218,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="trees_graphs" />
+              <option name="myItemId" value="moderate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ctci" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ctci" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,11 +248,11 @@
       <recent name="C:\Sites\ctci\arrays_strings" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby.insert_rank_test">
-    <configuration default="false" name="empty_string_search_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+  <component name="RunManager" selected="Ruby.two_sum_test">
+    <configuration default="false" name="swap_without_tmp_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ctci" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/sorting_searching/test" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/moderate/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -281,16 +261,16 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/sorting_searching/test/empty_string_search_test.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/moderate/test/swap_without_tmp_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="sorted_matrix_search_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="trailing_zeros_factorial_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ctci" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/sorting_searching/test" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/moderate/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -299,16 +279,16 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/sorting_searching/test/sorted_matrix_search_test.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/moderate/test/trailing_zeros_factorial_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="longest_incresing_subsequence_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="min_m_n_sort_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ctci" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/sorting_searching/test" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/moderate/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -317,16 +297,16 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/sorting_searching/test/longest_incresing_subsequence_test.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/moderate/test/min_m_n_sort_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="lis_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="largest_contiguous_sum_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ctci" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/sorting_searching/test" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/moderate/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -335,16 +315,16 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/sorting_searching/test/lis_test.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/moderate/test/largest_contiguous_sum_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="insert_rank_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="two_sum_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ctci" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/sorting_searching/test" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/moderate/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -353,7 +333,7 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/sorting_searching/test/insert_rank_test.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/moderate/test/two_sum_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
@@ -462,19 +442,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.empty_string_search_test" />
-      <item index="1" class="java.lang.String" itemvalue="Ruby.sorted_matrix_search_test" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.longest_incresing_subsequence_test" />
-      <item index="3" class="java.lang.String" itemvalue="Ruby.lis_test" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.insert_rank_test" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.swap_without_tmp_test" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.trailing_zeros_factorial_test" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.min_m_n_sort_test" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.largest_contiguous_sum_test" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.two_sum_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.insert_rank_test" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.lis_test" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.longest_incresing_subsequence_test" />
-        <item index="3" class="java.lang.String" itemvalue="Ruby.sorted_matrix_search_test" />
-        <item index="4" class="java.lang.String" itemvalue="Ruby.empty_string_search_test" />
+        <item index="0" class="java.lang.String" itemvalue="Ruby.two_sum_test" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.largest_contiguous_sum_test" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.min_m_n_sort_test" />
+        <item index="3" class="java.lang.String" itemvalue="Ruby.trailing_zeros_factorial_test" />
+        <item index="4" class="java.lang.String" itemvalue="Ruby.swap_without_tmp_test" />
       </list>
     </recent_temporary>
   </component>
@@ -492,10 +472,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858992" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32470894" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32470894" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729626" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -504,7 +484,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3984476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1293661" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34799483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -548,77 +528,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/stacks_queues/one_array_three_stacks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8" vertical-offset="0" max-vertical-offset="748">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacks_queues/test/stack_with_min_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacks_queues/sets_of_stacks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="946">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacks_queues/test/sets_of_stacks_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74885845" vertical-offset="90" max-vertical-offset="550">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacks_queues/test/hanoi_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="176">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacks_queues/hanoi.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacks_queues/queue_two_stacks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4520548" vertical-offset="0" max-vertical-offset="572">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacks_queues/test/queue_two_stacks_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.00456621" vertical-offset="200" max-vertical-offset="638">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacks_queues/stack_with_sort.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6484018" vertical-offset="332" max-vertical-offset="902">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacks_queues/test/stack_with_sort_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5022831" vertical-offset="0" max-vertical-offset="594">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stacks_queues/CatDogQueue.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.86887836" vertical-offset="0" max-vertical-offset="1100">
@@ -921,10 +830,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/moderate/test/swap_without_tmp_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moderate/swap_without_tmp.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5534591" vertical-offset="0" max-vertical-offset="477">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sorting_searching/insert_rank.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.71517026" vertical-offset="814" max-vertical-offset="1540">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.41090146" vertical-offset="794" max-vertical-offset="1540">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moderate/test/trailing_zeros_factorial_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="220">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moderate/trailing_zeros_factorial.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46121594" vertical-offset="0" max-vertical-offset="594">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moderate/min_m_n_sort.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1274" max-vertical-offset="1738">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moderate/test/min_m_n_sort_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5073375" vertical-offset="0" max-vertical-offset="477">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moderate/test/largest_contiguous_sum_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13836478" vertical-offset="0" max-vertical-offset="477">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moderate/largest_contiguous_sum.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36897275" vertical-offset="0" max-vertical-offset="528">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moderate/two_sum.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3375262" vertical-offset="0" max-vertical-offset="924">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moderate/test/two_sum_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046121594" vertical-offset="0" max-vertical-offset="477">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
