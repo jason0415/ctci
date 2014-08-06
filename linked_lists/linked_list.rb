@@ -11,10 +11,6 @@ class LinkedList
 
   def insert(key)
     new_node = Node.new(key)
-    if @head.nil?
-      @head = new_node
-      return
-    end
     new_node.next = @head
     @head = new_node
   end

@@ -38,7 +38,7 @@ list2.insert(2)
 list2.insert(3)
 list2.insert(4)
 puts "list2: #{list2.keys.inspect}"
-puts "After removing middle from the list2: #{DeleteMiddle.delete_middle(list2)}"
+puts "After removing middle from the list2: #{DeleteMiddle.delete_middle!(list2)}"
 puts list2.keys.inspect
 
 list3 = LinkedList.new
@@ -49,7 +49,7 @@ list3.append(6)
 list4.append(5)
 list4.append(9)
 # list4.append(3)
-puts "Sum of list3 and list4 is #{SumTwoLists.sum(list3, list4)}"
+puts "Sum of #{list3.keys} and #{list4.keys} is #{SumTwoLists.sum(list3, list4)}"
 
 list5 = LinkedList.new
 list5.append(0)

@@ -1,3 +1,5 @@
+# Check whether a linked list is circular
+
 class Circular
 
   def self.circular?(list)

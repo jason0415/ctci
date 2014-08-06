@@ -1,3 +1,7 @@
+# Write code to remove duplicates from an unsorted linked list.
+# FOLLOW UP
+# How would you solve this problem if a temporary buffer is not allowed?
+
 class RemoveDuplicate
 
   # Without hash table
@@ -17,8 +21,29 @@ class RemoveDuplicate
     end
   end
 
-  # With hash table
+  # Without hash table
   def self.remove_duplicate2!(list)
+    return if list.nil? || list.head.nil?
+    c = list.head
+    r = list.head.next
+    p = list.head
+    until c.next.nil?
+      until r.nil?
+        if c.key == r.key
+          p.next = r.next
+        else
+          p = r
+        end
+        r = r.next
+      end
+      c = c.next
+      p = c
+      r = c.next
+    end
+  end
+
+  # With hash table
+  def self.remove_duplicate3!(list)
     return if list.nil?
     hash = {}
     current = list.head
