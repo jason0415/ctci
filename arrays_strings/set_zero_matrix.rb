@@ -1,6 +1,9 @@
+# Write an algorithm such that if an element in an MxN matrix is 0, its entire row
+# and column are set to 0.
+
 class SetZeroMatrix
 
-  def self.set_zero(matrix=[])
+  def self.set_zero!(matrix=[])
     rows = Array.new(matrix.size, false)
     cols = Array.new(matrix[0].size, false)
 
