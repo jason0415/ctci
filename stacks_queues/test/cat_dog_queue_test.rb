@@ -1,6 +1,6 @@
 require '../cat'
 require '../dog'
-require '../CatDogQueue'
+require '../cat_dog_queue'
 
 c1 = Cat.new('c1')
 c2 = Cat.new('c2')

@@ -1,3 +1,8 @@
+# Write a program to sort a stack in ascending order (with biggest items on top).
+# You may use at most one additional stack to hold items, but you may not copy
+# the elements into any other data structure (such as an array). The stack supports
+# the following operations: push, pop, peek, and isEmpty.
+
 class StackWithSort
 
   def initialize
@@ -27,7 +32,7 @@ class StackWithSort
       buffer_stack << item
     end
 
-    @stack.clear
+    #@stack.clear
     until buffer_stack.empty?
       @stack << buffer_stack.pop
     end

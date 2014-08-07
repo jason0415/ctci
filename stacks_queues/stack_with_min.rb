@@ -1,3 +1,7 @@
+# How would you design a stack which, in addition to push and pop, also has a
+# function min which returns the minimum element? Push, pop and min should
+# all operate in O(1) time.
+
 class StackWithMin
 
   def initialize
@@ -7,9 +11,7 @@ class StackWithMin
 
   def push(value)
     @stack << value
-    if @min_stack.empty? || value < @min_stack.last
-      @min_stack << value
-    end
+    @min_stack << value if @min_stack.empty? || value < @min_stack.last
   end
 
   def pop
