@@ -1,6 +1,10 @@
+# You are given a binary tree in which each node contains a value. Design an algorithm
+# to print all paths which sum to a given value. The path does not need to
+# start or end at the root or a leaf.
+
 class AllPathsSum
 
-  # Does this node start a path with the sum ?
+  # Does this node complete a path with the sum ?
   def self.paths_starts_root(root, sum)
     paths = []
     paths_starts_root_helper(root, sum, 0, paths, 0)
@@ -20,7 +24,7 @@ class AllPathsSum
     print(paths) if tmp == sum
     paths_starts_root_helper(current.left, sum, tmp, paths, level+1)
     paths_starts_root_helper(current.right, sum, tmp, paths, level+1)
-    paths[level] = nil # Remove current node from paths
+    paths[level] = nil # Remove current node from paths, not strictly necessary
   end
   def self.print(paths)
     puts paths.select { |v| v != nil }.inspect
@@ -39,7 +43,7 @@ class AllPathsSum
 
     paths_helper(current.left, sum, paths, level+1)
     paths_helper(current.right, sum, paths, level+1)
-    paths[level] = nil # Remove current node from paths
+    paths[level] = nil # Remove current node from paths, not strictly necessary
   end
   def self.print_level(paths, from, to)
     puts paths[from..to].inspect

@@ -1,4 +1,6 @@
 require '../binary_search_tree'
+require '../check_if_balanced'
+require '../check_if_bst'
 require '../bt_lca'
 require '../binary_tree_subtree'
 
@@ -11,11 +13,10 @@ puts "BFS: #{bst.bfs.inspect}"
 
 puts "Height: #{bst.height}"
 
-puts "Is this tree balanced? - #{bst.balanced?}"
-puts "Is this tree balanced2? - #{bst.balanced2?}"
+puts "Is this tree balanced? - #{CheckIfBalanced.balanced?(bst.root)}"
+puts "Is this tree balanced2? - #{CheckIfBalanced.balanced2?(bst.root)}"
 
-puts "Is this tree a bst? - #{bst.bst?}"
-puts "Is this tree a bst2? - #{bst.bst2?}"
+puts "Is this tree a bst? - #{CheckIfBST.bst?(bst.root)}"
 
 key1 = rand(0..9)
 key2 = rand(0..9)

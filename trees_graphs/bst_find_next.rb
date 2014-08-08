@@ -1,4 +1,6 @@
-# Find in-order successor of a given node, assume each has a parent pointer
+# Write an algorithm to find the'next'node (i.e., in-order successor) of a given node
+# in a binary search tree. You may assume that each node has a link to its parent.
+
 class BSTFindNext
 
   def self.find_next(bst, key)
@@ -17,7 +19,7 @@ class BSTFindNext
         current = current.left
       end
     end
-    return current
+    current
   end
 
 end
