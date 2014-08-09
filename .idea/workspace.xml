@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="272613d6-1c4d-4c60-9122-f53009567d7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trees_graphs/check_if_balanced.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trees_graphs/check_if_bst.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trees_graphs/all_paths_sum.rb" afterPath="$PROJECT_DIR$/trees_graphs/all_paths_sum.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trees_graphs/binary_search_tree.rb" afterPath="$PROJECT_DIR$/trees_graphs/binary_search_tree.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trees_graphs/test/binary_search_tree_test.rb" afterPath="$PROJECT_DIR$/trees_graphs/test/binary_search_tree_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trees_graphs/binary_tree_list_depth.rb" afterPath="$PROJECT_DIR$/trees_graphs/binary_tree_list_depth.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trees_graphs/binary_tree_subtree.rb" afterPath="$PROJECT_DIR$/trees_graphs/binary_tree_subtree.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trees_graphs/bst_find_next.rb" afterPath="$PROJECT_DIR$/trees_graphs/bst_find_next.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trees_graphs/bt_lca.rb" afterPath="$PROJECT_DIR$/trees_graphs/bt_lca.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/bit_opt.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/test/bit_opt_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/count_bits_convert.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/test/count_bits_convert_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/explain_expression.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/float_binary.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/test/float_binary_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/swap_odd_even_bits.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/test/swap_odd_even_bits_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/update_m_to_n.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bit_manipulation/test/update_m_to_n_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ctci.iml" afterPath="$PROJECT_DIR$/.idea/ctci.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trees_graphs/depth_first_path.rb" afterPath="$PROJECT_DIR$/trees_graphs/depth_first_path.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trees_graphs/sorted_array_bst_min_height.rb" afterPath="$PROJECT_DIR$/trees_graphs/sorted_array_bst_min_height.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trees_graphs/test/sorted_array_bst_min_height_test.rb" afterPath="$PROJECT_DIR$/trees_graphs/test/sorted_array_bst_min_height_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ctci.iws" />
@@ -35,6 +34,7 @@
     <SUITE FILE_PATH="coverage/ctci@cat_dog_queue_test.coverage" NAME="cat_dog_queue_test Coverage Results" MODIFIED="1406253494964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stacks_queues/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@unique_chars_test.coverage" NAME="unique_chars_test Coverage Results" MODIFIED="1407283325748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/arrays_strings/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@replace_whitespaces_test.coverage" NAME="replace_whitespaces_test Coverage Results" MODIFIED="1407285615360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/arrays_strings/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@next_same_num_of_one_bits_test.coverage" NAME="next_same_num_of_one_bits_test Coverage Results" MODIFIED="1407551504951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit_manipulation/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@sorted_matrix_search_test.coverage" NAME="sorted_matrix_search_test Coverage Results" MODIFIED="1406696869641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@count_two_test.coverage" NAME="count_two_test Coverage Results" MODIFIED="1406953338294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hard/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@lis_test.coverage" NAME="lis_test Coverage Results" MODIFIED="1406757142718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
@@ -50,12 +50,14 @@
     <SUITE FILE_PATH="coverage/ctci@two_sum_test.coverage" NAME="two_sum_test Coverage Results" MODIFIED="1406865345478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moderate/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@permutation_test.coverage" NAME="permutation_test Coverage Results" MODIFIED="1406593331331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursion_dp/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@sorted_array_bst_min_height_test.coverage" NAME="sorted_array_bst_min_height_test Coverage Results" MODIFIED="1407439797536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trees_graphs/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@update_m_to_n_test.coverage" NAME="update_m_to_n_test Coverage Results" MODIFIED="1407534001797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit_manipulation/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@group_anagram_test.coverage" NAME="group_anagram_test Coverage Results" MODIFIED="1406659838463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@words_min_distance_test.coverage" NAME="words_min_distance_test Coverage Results" MODIFIED="1407184013407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hard/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@directed_graph_test.coverage" NAME="directed_graph_test Coverage Results" MODIFIED="1407438039048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trees_graphs/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@merge_subarray_test.coverage" NAME="merge_subarray_test Coverage Results" MODIFIED="1406657427415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@smallest_m_in_n_test.coverage" NAME="smallest_m_in_n_test Coverage Results" MODIFIED="1407186788416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hard/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@binary_search_tree_test.coverage" NAME="binary_search_tree_test Coverage Results" MODIFIED="1407461195160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trees_graphs/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@test.coverage" NAME="test Coverage Results" MODIFIED="1407531582976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit_manipulation" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@rotation_search_test.coverage" NAME="rotation_search_test Coverage Results" MODIFIED="1406668736239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@linked_list_test.coverage" NAME="linked_list_test Coverage Results" MODIFIED="1407362014352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linked_lists/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@one_array_three_stacks_test.coverage" NAME="one_array_three_stacks_test Coverage Results" MODIFIED="1406234386626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stacks_queues/test" MODULE_NAME="ctci" />
@@ -64,6 +66,8 @@
     <SUITE FILE_PATH="coverage/ctci@set_zero_matrix_test.coverage" NAME="set_zero_matrix_test Coverage Results" MODIFIED="1407297518967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/arrays_strings/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@fib_test.coverage" NAME="fib_test Coverage Results" MODIFIED="1406587410677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursion_dp/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@insert_m_to_n_test.coverage" NAME="insert_m_to_n_test Coverage Results" MODIFIED="1407279428723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit_manipulation/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@count_bits_convert_test.coverage" NAME="count_bits_convert_test Coverage Results" MODIFIED="1407555487769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit_manipulation/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@bit_opt_test.coverage" NAME="bit_opt_test Coverage Results" MODIFIED="1407555585812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit_manipulation/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@reverse_string_test.coverage" NAME="reverse_string_test Coverage Results" MODIFIED="1407284115217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/arrays_strings/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@all_paths_sum_test.coverage" NAME="all_paths_sum_test Coverage Results" MODIFIED="1407467936599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trees_graphs/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@insert_rank_test.coverage" NAME="insert_rank_test Coverage Results" MODIFIED="1406761831767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
@@ -71,12 +75,14 @@
     <SUITE FILE_PATH="coverage/ctci@longest_incresing_subsequence_test.coverage" NAME="longest_incresing_subsequence_test Coverage Results" MODIFIED="1406701726433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@stack_with_sort_test.coverage" NAME="stack_with_sort_test Coverage Results" MODIFIED="1407372009538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stacks_queues/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@randomly_m_test.coverage" NAME="randomly_m_test Coverage Results" MODIFIED="1406952095336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hard/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@swap_odd_even_bits_test.coverage" NAME="swap_odd_even_bits_test Coverage Results" MODIFIED="1407557892497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit_manipulation/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@perfect_shuffle_test.coverage" NAME="perfect_shuffle_test Coverage Results" MODIFIED="1406953228968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hard/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@stack_with_min_test.coverage" NAME="stack_with_min_test Coverage Results" MODIFIED="1406241082192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stacks_queues/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@empty_string_search_test.coverage" NAME="empty_string_search_test Coverage Results" MODIFIED="1406684897522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_searching/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@swap_without_tmp_test.coverage" NAME="swap_without_tmp_test Coverage Results" MODIFIED="1406766605951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moderate/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@hanoi_test.coverage" NAME="hanoi_test Coverage Results" MODIFIED="1406247807679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stacks_queues/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@trailing_zeros_factorial_test.coverage" NAME="trailing_zeros_factorial_test Coverage Results" MODIFIED="1406768770529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moderate/test" MODULE_NAME="ctci" />
+    <SUITE FILE_PATH="coverage/ctci@float_binary_test.coverage" NAME="float_binary_test Coverage Results" MODIFIED="1407539420926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit_manipulation/test" MODULE_NAME="ctci" />
     <SUITE FILE_PATH="coverage/ctci@rotate_test.coverage" NAME="rotate_test Coverage Results" MODIFIED="1405998462344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/arrays_strings/test" MODULE_NAME="ctci" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -91,21 +97,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="all_paths_sum.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trees_graphs/all_paths_sum.rb">
+      <file leaf-file-name="bit_opt.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bit_manipulation/bit_opt.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1254">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="748">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all_paths_sum_test.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/trees_graphs/test/all_paths_sum_test.rb">
+      <file leaf-file-name="float_binary.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bit_manipulation/float_binary.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64833003" vertical-offset="0" max-vertical-offset="968">
-              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="638">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="explain_expression.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bit_manipulation/explain_expression.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="176">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="count_bits_convert.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bit_manipulation/count_bits_convert.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="swap_odd_even_bits.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bit_manipulation/swap_odd_even_bits.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="swap_odd_even_bits_test.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bit_manipulation/test/swap_odd_even_bits_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.086444005" vertical-offset="0" max-vertical-offset="509">
+              <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -124,23 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hard/longest_word_made_of_others.rb" />
-        <option value="$PROJECT_DIR$/hard/test/longest_word_made_of_others_test.rb" />
-        <option value="$PROJECT_DIR$/hard/median.rb" />
-        <option value="$PROJECT_DIR$/hard/test/median_test.rb" />
-        <option value="$PROJECT_DIR$/hard/test/transform_word_test.rb" />
-        <option value="$PROJECT_DIR$/hard/transform_word.rb" />
-        <option value="$PROJECT_DIR$/bit_manipulation/test/insert_m_to_n_test.rb" />
-        <option value="$PROJECT_DIR$/bit_manipulation/insert_m_to_n.rb" />
-        <option value="$PROJECT_DIR$/arrays_strings/test/reverse_string_test.rb" />
-        <option value="$PROJECT_DIR$/arrays_strings/test/replace_whitespaces_test.rb" />
-        <option value="$PROJECT_DIR$/arrays_strings/test/string_compression_test.rb" />
-        <option value="$PROJECT_DIR$/arrays_strings/test/set_zero_matrix_test.rb" />
-        <option value="$PROJECT_DIR$/arrays_strings/rotate_string.rb" />
-        <option value="$PROJECT_DIR$/arrays_strings/set_zero_matrix.rb" />
-        <option value="$PROJECT_DIR$/arrays_strings/rotate_matrix.rb" />
-        <option value="$PROJECT_DIR$/arrays_strings/string_compression.rb" />
-        <option value="$PROJECT_DIR$/arrays_strings/replace_whitespaces.rb" />
         <option value="$PROJECT_DIR$/arrays_strings/whether_permutation.rb" />
         <option value="$PROJECT_DIR$/arrays_strings/reverse_string.rb" />
         <option value="$PROJECT_DIR$/arrays_strings/unique_chars.rb" />
@@ -175,6 +204,23 @@
         <option value="$PROJECT_DIR$/trees_graphs/check_if_bst.rb" />
         <option value="$PROJECT_DIR$/trees_graphs/binary_tree_subtree.rb" />
         <option value="$PROJECT_DIR$/trees_graphs/all_paths_sum.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/test.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/test/insert_m_to_n.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/insert_m_to_n.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/update_m_to_n.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/test/update_m_to_n_test.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/test/float_binary_test.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/float_binary.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/test/next_same_num_of_one_bits_test.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/next_same_num_of_one_bits.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/explain_expression.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/count_bits_convert.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/test/count_bits_convert_test.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/bit_opt.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/test/bit_opt_test.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/test/swap_odd_even_bits.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/test/swap_odd_even_bits_test.rb" />
+        <option value="$PROJECT_DIR$/bit_manipulation/swap_odd_even_bits.rb" />
       </list>
     </option>
   </component>
@@ -227,8 +273,18 @@
               <option name="myItemId" value="ctci" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="trees_graphs" />
+              <option name="myItemId" value="ctci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ctci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bit_manipulation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -242,21 +298,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="trees_graphs" />
+              <option name="myItemId" value="bit_manipulation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ctci" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ctci" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,21 +318,22 @@
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../redeem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../local" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Sites\ctci\bit_manipulation" />
       <recent name="C:\Sites\ctci\sorting_searching" />
       <recent name="C:\Sites\ctci\trees_graphs" />
       <recent name="C:\Sites\ctci\arrays_strings" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby.all_paths_sum_test">
-    <configuration default="false" name="stack_with_sort_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+  <component name="RunManager" selected="Ruby.swap_odd_even_bits_test">
+    <configuration default="false" name="bit_opt_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ctci" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/stacks_queues/test" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/bit_manipulation/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -295,16 +342,16 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/stacks_queues/test/stack_with_sort_test.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bit_manipulation/test/bit_opt_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="binary_search_tree_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="float_binary_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ctci" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/trees_graphs/test" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/bit_manipulation/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -313,16 +360,16 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/trees_graphs/test/binary_search_tree_test.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bit_manipulation/test/float_binary_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="directed_graph_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="next_same_num_of_one_bits_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ctci" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/trees_graphs/test" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/bit_manipulation/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -331,16 +378,16 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/trees_graphs/test/directed_graph_test.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bit_manipulation/test/next_same_num_of_one_bits_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="sorted_array_bst_min_height_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="count_bits_convert_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ctci" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/trees_graphs/test" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/bit_manipulation/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -349,16 +396,16 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/trees_graphs/test/sorted_array_bst_min_height_test.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bit_manipulation/test/count_bits_convert_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="all_paths_sum_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="swap_odd_even_bits_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ctci" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/trees_graphs/test" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/bit_manipulation/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -367,7 +414,7 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/trees_graphs/test/all_paths_sum_test.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bit_manipulation/test/swap_odd_even_bits_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
@@ -476,19 +523,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.stack_with_sort_test" />
-      <item index="1" class="java.lang.String" itemvalue="Ruby.binary_search_tree_test" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.directed_graph_test" />
-      <item index="3" class="java.lang.String" itemvalue="Ruby.sorted_array_bst_min_height_test" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.all_paths_sum_test" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.bit_opt_test" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.float_binary_test" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.next_same_num_of_one_bits_test" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.count_bits_convert_test" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.swap_odd_even_bits_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.all_paths_sum_test" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.binary_search_tree_test" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.sorted_array_bst_min_height_test" />
-        <item index="3" class="java.lang.String" itemvalue="Ruby.directed_graph_test" />
-        <item index="4" class="java.lang.String" itemvalue="Ruby.stack_with_sort_test" />
+        <item index="0" class="java.lang.String" itemvalue="Ruby.swap_odd_even_bits_test" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.bit_opt_test" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.count_bits_convert_test" />
+        <item index="3" class="java.lang.String" itemvalue="Ruby.next_same_num_of_one_bits_test" />
+        <item index="4" class="java.lang.String" itemvalue="Ruby.float_binary_test" />
       </list>
     </recent_temporary>
   </component>
@@ -506,7 +553,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858992" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32341528" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -562,94 +609,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/arrays_strings/test/unique_chars_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25831702" vertical-offset="0" max-vertical-offset="511">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrays_strings/test/reverse_string_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12915851" vertical-offset="0" max-vertical-offset="511">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrays_strings/test/whether_permutation_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17670682" vertical-offset="0" max-vertical-offset="498">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrays_strings/test/replace_whitespaces_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08835341" vertical-offset="0" max-vertical-offset="498">
-          <caret line="2" column="73" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrays_strings/test/rotate_matrix_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7648262" vertical-offset="0" max-vertical-offset="506">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrays_strings/test/rotate_string_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="489">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrays_strings/test/set_zero_matrix_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3149284" vertical-offset="0" max-vertical-offset="489">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrays_strings/rotate_string.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22494887" vertical-offset="0" max-vertical-offset="489">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrays_strings/set_zero_matrix.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044989776" vertical-offset="0" max-vertical-offset="704">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrays_strings/rotate_matrix.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1799591" vertical-offset="0" max-vertical-offset="638">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrays_strings/test/string_compression_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12915851" vertical-offset="0" max-vertical-offset="511">
-          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/arrays_strings/string_compression.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.043052837" vertical-offset="0" max-vertical-offset="704">
@@ -954,18 +913,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trees_graphs/test/all_paths_sum_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6653226" vertical-offset="0" max-vertical-offset="968">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trees_graphs/all_paths_sum.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1254">
+        <state vertical-scroll-proportion="0.13306452" vertical-offset="0" max-vertical-offset="1254">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trees_graphs/test/all_paths_sum_test.rb">
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/update_m_to_n.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64833003" vertical-offset="0" max-vertical-offset="968">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="638">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/test/update_m_to_n_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="242">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/test/float_binary_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38899803" vertical-offset="0" max-vertical-offset="509">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/float_binary.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="638">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/explain_expression.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="176">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/bit_opt.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="748">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/test/bit_opt_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/count_bits_convert.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/test/count_bits_convert_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37130803" vertical-offset="0" max-vertical-offset="474">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/swap_odd_even_bits.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bit_manipulation/test/swap_odd_even_bits_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.086444005" vertical-offset="0" max-vertical-offset="509">
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
           <folding />
         </state>
       </provider>
