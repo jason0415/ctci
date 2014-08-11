@@ -1,0 +1,11 @@
+There is a building of 100 floors. In an egg drops from the nth floor or above, it will
+break. If it's dropped from any floor below, it will not break. You're given two eggs.
+Find n, while minimizing the number of drops for the worst case.
+
+
+
+Answer:
+x + (x-1) + (x-2) + ... + 1 = 100.
+x = 14
+
+We go to floor 14, then 27, then 39, ....This takes 14 steps in the worse case.
