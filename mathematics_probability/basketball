@@ -1,0 +1,21 @@
+You have a basketball hoop and someone says that you can play one of two games.
+Game 1: You get one shot to make the hoop.
+Game 2: You get three shots and you have to make two of three shots.
+If p is the probability of making a particular shot, for which values of p should you
+pick one game or the other?
+
+
+
+Answer:
+The probability of successful two shots is C(2/3) * p² * (1-p) = 3p²(1-p)
+The probalility of successful three shots is p * p * p = p³
+
+If we pick Game 1:
+3p²(1-p) + p³ < p
+=> (p-1)(2p-1) > 0
+because p < 1, so, p < 0.5
+
+So,
+If p < 0.5, we should pick Game 1;
+If p = 0.5, it doesn't matter.
+If p > 0.5, we should pick Game 2.
