@@ -1,4 +1,4 @@
-# Longest increasing sub-sequence (Patience sorting)
+# Longest increasing sub-array (Patience sorting)
 
 # Patience. Deal cards c1, c2, …, cn into piles according to two rules:
 # - Can't place a higher-valued card onto a lowered-valued card.
@@ -9,6 +9,7 @@
 # - Use n stacks to represent n piles.
 # - Use binary search to find leftmost legal pile.
 
+# At any stage during greedy algorithm, top cards of piles increase from left to right.
 # In any legal game of patience, the number of piles ≥ length of any increasing sub-sequence.
 class LIS
 
@@ -22,7 +23,7 @@ class LIS
 
     lis = []
     piles.each do |pile|
-      lis << pile.first # We pick any one item in each pile, here I just pick the first one
+      lis << pile.first # We pick last item in each pile, here I just pick the first one
     end
     lis
   end

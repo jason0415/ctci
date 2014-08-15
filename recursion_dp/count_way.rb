@@ -4,7 +4,7 @@
 
 class CountWay
 
-  # 0(3 to the n)
+  # O(3^n)
   def self.count_way(n)
     if n < 0
       0
@@ -15,25 +15,25 @@ class CountWay
     end
   end
 
-  # O(N)
+  # O(n)
   # With dynamic programming
   def self.count_way_dp(n)
-    map = []
-    count_way_dp_helper(n, map)
+    dp = []
+    count_way_dp_helper(n, dp)
   end
 
   private
-  def self.count_way_dp_helper(n, map)
+  def self.count_way_dp_helper(n, dp)
     if n < 0
       0
     elsif n == 0
       1
-    elsif !map[n].nil?
-      map[n]
+    elsif !dp[n].nil?
+      dp[n]
     else
-      map[n] = count_way_dp_helper(n-1, map) +
-          count_way_dp_helper(n-2, map) + count_way_dp_helper(n-3, map)
-      map[n]
+      dp[n] = count_way_dp_helper(n-1, dp) +
+          count_way_dp_helper(n-2, dp) + count_way_dp_helper(n-3, dp)
+      dp[n]
     end
   end
 

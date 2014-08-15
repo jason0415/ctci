@@ -1,24 +1,24 @@
 class Fib
 
-  # 0(2 to the n)
+  # O(2^n)
   def self.find(n)
     return n if n == 0 || n == 1
     find(n-1) + find(n-2)
   end
 
-  # O(N)
+  # O(n)
   # With dynamic programming
   def self.find_dp(n)
-    fib = []
-    find_dp_helper(fib, n)
+    dp = []
+    find_dp_helper(n, dp)
   end
 
   private
-  def self.find_dp_helper(fib, n)
+  def self.find_dp_helper(n, dp)
     return n if n == 0 || n == 1
-    return fib[n] unless fib[n].nil?
-    fib[n] = find_dp_helper(fib, n-1) + find_dp_helper(fib, n-2)
-    fib[n]
+    return dp[n] unless dp[n].nil?
+    dp[n] = find_dp_helper(n-1, dp) + find_dp_helper(n-2, dp)
+    dp[n]
   end
 
 end
