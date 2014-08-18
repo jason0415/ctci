@@ -1,0 +1,25 @@
+If you were designing a web crawler, how would you avoid getting into infinite
+loops?
+
+
+
+Picture the web as a graph of links. We can use bfs to traverse all the links. To avoid getting
+into infinite loops, we can just avoid to visit the same link twice.
+
+However, different links may have same contents. Example: www.google.com and www.google.com?hello=world
+are actually the same. On the other hand, same links may also have different contents.
+
+One way to tackle this is to have some sort of estimation for degree of similarity. If, based
+on the content and the URL, a page is deemed to be sufficiently similar to other pages,
+we deprioritize crawling its children. For each page, we would come up with some sort
+of signature based on snippets of the content and the page's URL.
+Let's see how this would work.
+We have a database which stores a list of items we need to crawl. On each iteration, we
+select the highest priority page to crawl. We then do the following:
+1. Open up the page and create a signature of the page based on specific subsections
+of the page and its URL.
+2. Query the database to see whether anything with this signature has been crawled
+recently.
+3. If something with this signature has been recently crawled, insert this page back into
+the database at a low priority.
+4. If not, crawl the page and insert its links into the database.
