@@ -4,6 +4,11 @@
 class SortedMatrixSearch
 
   def self.find(matrix, key)
+    return [] if matrix.nil?
+    find_helper(matrix, key, 0, matrix[0].size-1)
+  end
+
+  def self.find2(matrix, key)
     row = 0
     col = matrix[0].size-1
     until row > matrix.size || col < 0
@@ -14,6 +19,18 @@ class SortedMatrixSearch
       else
         return [row, col]
       end
+    end
+  end
+
+  private
+  def self.find_helper(matrix, key, i, j)
+    return [] if i < 0 || j < 0
+    if key < matrix[i][j]
+      find_helper(matrix, key, i, j-1)
+    elsif key > matrix[i][j]
+      find_helper(matrix, key, i+1, j)
+    else
+      [i, j]
     end
   end
 

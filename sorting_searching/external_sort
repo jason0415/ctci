@@ -1,0 +1,9 @@
+Imagine you have a 20 GB file with one string per line. Explain how you would
+sort the file.
+
+
+
+Assume we have 1G memory:
+1. Split the file into 20 chunks.
+2. Sort these small files in memory and store them in disk.
+3. User external merge to merge these small files one by one.

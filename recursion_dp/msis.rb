@@ -3,20 +3,34 @@
 class MSIS
 
   # O(n^2)
-  # denotes the maximum sum increasing sub-sequence of a[0..i-1] which ends at a[i]
-  def self.find(a)
-    all_combinations = []
+  # Denotes the maximum sum increasing sub-sequence of a[0..i-1] which ends at a[i]
+  # Dynamic programming
+  # dp is an array that holds maximum sum ends at i
+  def self.find(a=[])
+    return [] if a.nil? || a.empty?
+    dp = a.dup
+    combinations = Array.new(a.size) {[]}
+    combinations[0] = [a[0]]
 
-    (0..a.size-1).each do |i|
-      all_combinations[i] = [a[i]]
-      (i-1).downto(0).each do |j|
-        if a[j] < all_combinations[i].first
-          all_combinations[i].unshift(a[j]) # insert it at the front
+    (1..a.size-1).each do |i|
+      (0..i-1).each do |j|
+        if a[j] < a[i] && dp[j] + a[i] >= dp[i]
+          dp[i] = dp[j] + a[i]
+          combinations[i] = combinations[j].dup << a[i]
         end
       end
     end
 
-    all_combinations.max_by { |list| list.inject {|sum, item| sum + item } }
+    # puts dp.max
+    combinations.max_by { |list| sum_array(list) }
+  end
+
+  def self.sum_array(a=[])
+    sum = 0
+    a.each do |item|
+      sum += item
+    end
+    sum
   end
 
 end

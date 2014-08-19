@@ -10,34 +10,35 @@ class RotationSearch
   # O(log n) if all the elements are unique.
   # However, with many duplicates, the algorithm is actually O(n). This is because with
   # many duplicates, we will often have to search both the left and right sides of the array (or subarrays).
-  def self.find(array=[], key)
-    find_helper(array, key, 0, array.size-1)
+  def self.find(a=[], key)
+    find_helper(a, key, 0, a.size-1)
   end
 
   private
-  def self.find_helper(array, key, left, right)
-    return nil if left > right
-    mid = (left+right)/2
-    return mid if key == array[mid]
-    if array[mid] > array[left] # Left side is sorted
-      if key >= array[left] && key <= array[mid] # Search on left
-        find_helper(array, key, left, mid-1)
+  def self.find_helper(a, key, from, to)
+    return nil if from > to
+    mid = (from+to)/2
+    return mid if key == a[mid]
+    if a[mid] > a[from] # Left side is sorted
+      if key >= a[from] && key <= a[mid] # Search on left
+        find_helper(a, key, from, mid-1)
       else
-        find_helper(array, key, mid+1, right)
+        find_helper(a, key, mid+1, to)
       end
-    elsif array[mid] < array[left] # Left side is not sorted, that means Right side is sorted
-      if key >= array[mid] && key <= array[right] # Search on right
-        find_helper(array, key, mid+1, right)
+    elsif a[mid] < a[from] # Left side is not sorted, that means Right side is sorted
+      if key >= a[mid] && key <= a[to] # Search on right
+        find_helper(a, key, mid+1, to)
       else
-        find_helper(array, key, left, mid-1)
+        find_helper(a, key, from, mid-1)
       end
     else # Left half is all repeats
-      if array[mid] == array[right] # both leftmost key and rightmost key are the same as middle key.
-        result = find_helper(array, key, left, mid-1)
-        result = find_helper(array, key, mid+1, right) if result.nil?
+      if a[mid] == a[to] # both leftmost key and rightmost key are the same as middle key
+                         # eg. [1,1,1,1,2,3,1], [1,2,3,1,1,1,1] => we need to search for both sides
+        result = find_helper(a, key, from, mid-1)
+        result = find_helper(a, key, mid+1, to) if result.nil?
         result
       else # If rightmost key is different than middle key, search right side
-        find_helper(array, key, mid+1, right)
+        find_helper(a, key, mid+1, to)
       end
     end
   end

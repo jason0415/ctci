@@ -1,47 +1,28 @@
-# Longest increasing sub-array (Patience sorting)
+# Longest increasing sub-array
 
-# Patience. Deal cards c1, c2, …, cn into piles according to two rules:
-# - Can't place a higher-valued card onto a lowered-valued card.
-# - Can form a new pile and put a card onto it.
-
-# Greedy algorithm. Place each card on leftmost pile that fits.
-# Theorem. The greedy algorithm can be implemented in O(n log n) time.
-# - Use n stacks to represent n piles.
-# - Use binary search to find leftmost legal pile.
-
-# At any stage during greedy algorithm, top cards of piles increase from left to right.
-# In any legal game of patience, the number of piles ≥ length of any increasing sub-sequence.
 class LIS
 
-  # O(nlogn)
-  def self.find(array=[])
-    piles = []
-    array.each do |item|
-      i = which_pile(piles, item)
-      piles[i].nil? ? piles[i] = [item] : piles[i] << item
+  # O(n^2)
+  # Denotes the longest increasing sub-sequence of a[0..i-1] which ends at a[i]
+  # Dynamic programming
+  # dp is an array that holds longest length ends at i
+  def self.find(a=[])
+    return [] if a.nil? || a.empty?
+    dp = Array.new(a.size, 1)
+    combinations = Array.new(a.size) { [] }
+    combinations[0] = [a[0]]
+
+    (1..a.size-1).each do |i|
+      (0..i-1).each do |j|
+        if a[j] < a[i] && dp[j] + 1 > dp[i]
+          dp[i] = dp[j] + 1
+          combinations[i] = combinations[j].dup << a[i]
+        end
+      end
     end
 
-    lis = []
-    piles.each do |pile|
-      lis << pile.first # We pick last item in each pile, here I just pick the first one
-    end
-    lis
-  end
-
-  private
-  def self.which_pile(piles, item)
-    which_pile_helper(piles, item, 0, piles.size-1)
-  end
-
-  # Binary search
-  def self.which_pile_helper(piles, item, from, to)
-    return from if from > to
-    mid = (from+to)/2
-    if item <= piles[mid].last
-      mid
-    else
-      which_pile_helper(piles, item, mid+1, to)
-    end
+    # puts dp.max
+    combinations.max_by { |list| list.length }
   end
 
 end

@@ -1,8 +1,11 @@
+# Write a method to sort an array of strings so that all the anagrams are next to
+# each other.
+
 class GroupAnagram
 
-  def self.group!(array=[])
+  def self.group!(a=[])
     hash = {}
-    array.each do |str|
+    a.each do |str|
       sorted_str = str.chars.sort.join
       unless hash.has_key?(sorted_str)
         hash[sorted_str] = []
@@ -13,7 +16,7 @@ class GroupAnagram
     i = 0
     hash.each do |sorted_str, anagrams|
       anagrams.each do |anagram|
-        array[i] = anagram
+        a[i] = anagram
         i += 1
       end
     end
