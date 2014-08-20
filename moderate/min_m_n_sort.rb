@@ -1,25 +1,28 @@
 # Given an array of integers, write a method to find indices m and n such that if you
 # sorted elements m through n, the entire array would be sorted. Minimize n - m
 # (that is, find the smallest such sequence).
-
-# Observation.
-# - The integers before m should be ascending and smaller than (or equal to) any integers after.
-#
-# Algorithm.
-# - Start from the first element, and stop upon first decreasing. (sub array SA)
-# - Find minimum after. (MIN)
-# - The start point is just after the maximum integer in SA that is smaller than (or equal to) MIN. (m is found)
-#
-# Complexity.
-# - O(N)
-
-# Do similar for n.
+# EXAMPLE
+# Input: 1, 2, 4, 7, 10, 11, 7, 12, 6, 7, 16, 18, 19
+# Output: (3, 9)
 
 class MinMNSort
 
   MAX = 999
   MIN = -999
 
+
+  # Observation.
+  # - The integers before m should be ascending and smaller than (or equal to) any integers after.
+  #
+  # Algorithm.
+  # - Start from the first element, and stop upon first decreasing. (sub array SA)
+  # - Find minimum after. (MIN)
+  # - The start point is just after the maximum integer in SA that is smaller than (or equal to) MIN. (m is found)
+  #
+  # Complexity.
+  # - O(n)
+
+  # Do similar for n.
   def self.find(a=[])
     return nil if a.nil?
     return [0,0] if a.size < 2

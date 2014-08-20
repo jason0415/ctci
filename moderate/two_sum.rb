@@ -19,7 +19,7 @@ class TwoSum
     result = []
     a.sort!
     i,j = 0,a.size-1
-    until i == j
+    until i >= j
       if a[i] + a[j] < k
         j -= 1
       elsif a[i] + a[j] > k

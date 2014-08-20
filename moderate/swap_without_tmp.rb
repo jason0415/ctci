@@ -1,3 +1,5 @@
+# Write a function to swap a number in place (that is, without temporary variables).
+
 class SwapWithoutTmp
 
   def self.swap(a, b)
