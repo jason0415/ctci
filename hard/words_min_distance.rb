@@ -1,11 +1,9 @@
-class WordsMinDistance
+# You have a large text file containing words. Given any two words, find the shortest
+# distance (in terms of number of words) between them in the file. If the operation
+# will be repeated many times for the same file (but different pairs of words), can you
+# optimize your solution?
 
-  class Wrapper
-    attr_accessor :name, :value
-    def initialize(name, value)
-      @name, @value = name, value
-    end
-  end
+class WordsMinDistance
 
   def initialize(text='')
     @hash = {}
@@ -25,26 +23,21 @@ class WordsMinDistance
     return min_distance unless @hash.has_key?(str1) && @hash.has_key?(str2)
 
     pos1, pos2 = @hash[str1], @hash[str2]
+    # Given two sorted arrays of equal length, how do you find a
+    # pair of numbers, one from each array, such that the absolute
+    # difference between the two numbers is minimum.
 
-    _pos1, _pos2 = [], []
-    pos1.each do |i|
-      _pos1 << Wrapper.new('a', i)
-    end
-    pos2.each do |i|
-      _pos2 << Wrapper.new('b', i)
+    i, j = 0, 0
+    until i == pos1.size || j == pos2.size
+      diff = (pos1[i] - pos2[j]).abs
+      min_distance = diff if diff < min_distance
+      if pos1[i] < pos2[j]
+        i += 1
+      else
+        j += 1
+      end
     end
 
-    sorted_pos = []
-    until _pos1.empty? || _pos2.empty?
-      _pos1.first.value < _pos2.first.value ? sorted_pos << _pos1.shift : sorted_pos << _pos2.shift
-    end
-    sorted_pos = sorted_pos + _pos1 + _pos2
-
-    (0..sorted_pos.size-2).each do |i|
-      min_distance = sorted_pos[i+1].value - sorted_pos[i].value if
-          sorted_pos[i+1].name != sorted_pos[i] &&
-              (sorted_pos[i+1].value - sorted_pos[i].value).abs < min_distance
-    end
     min_distance
   end
 

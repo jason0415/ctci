@@ -4,11 +4,11 @@
 class RandomlyM
 
   def self.find(a, m)
-    return [] if a.size < m || m <= 0
+    return [] if a.nil? || a.size < m || m <= 0
     subset = a[0..m-1]
     (m..a.size-1).each do |i|
-      k = rand(0..i)
-      subset[k] = a[i] if k < m
+      r = rand(0..i)
+      subset[r] = a[i] if r < m
     end
     subset
   end

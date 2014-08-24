@@ -1,32 +1,38 @@
+# Given a list of words, write a program to find the longest word made of other
+# words in the list.
+# EXAMPLE
+# Input: cat, banana, dog, nana, walk, walker, dogwalker
+# Output: dogwalker
+
 class LongestWordMadeOfOthers
 
   # Find the longest word made of other words
-  def self.find(array)
-    return nil if array.nil?
-    array.sort! { |x, y| y.size <=> x.size }
+  def self.find(a)
+    return nil if a.nil?
+    a.sort! { |x, y| y.size <=> x.size } # Starts from the longest word
 
     hash = {}
-    array.each do |word|
+    a.each do |word|
       hash[word] = true
     end
 
-    array.each do |word|
+    a.each do |word|
       return word if made_of_words?(word, true, hash)
     end
     nil
   end
 
   # Find the longest word made of two other words
-  def self.find_two(array)
-    return nil if array.nil?
-    array.sort! { |x, y| y.size <=> x.size }
+  def self.find_two(a)
+    return nil if a.nil?
+    a.sort! { |x, y| y.size <=> x.size }  # Starts from the longest word
 
     hash = {}
-    array.each do |word|
+    a.each do |word|
       hash[word] = true
     end
 
-    array.each do |word|
+    a.each do |word|
       (0..word.size-2).each do |i|
         left = word[0..i]
         right = word[i+1..word.size-1]
@@ -37,6 +43,10 @@ class LongestWordMadeOfOthers
   end
 
   private
+  # rather than simply looking up if the right side is in the array,
+  # we would recursively see if we can build the right side from the
+  # other elements in the array.
+  # Dynamic programming (we need to sort the array first)
   def self.made_of_words?(word, origial_word, hash)
     return hash[word] if hash.has_key?(word) && !origial_word
     (0..word.size-2).each do |i|
@@ -44,6 +54,7 @@ class LongestWordMadeOfOthers
       right = word[i+1..word.size-1]
       return true if hash[left] && made_of_words?(right, false, hash)
     end
+    hash[word] = false # We have to sort the array
     false
   end
 

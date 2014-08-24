@@ -1,6 +1,9 @@
 # Given two words of equal length that are in a dictionary, write a method to
 # transform one word into another word by changing only one letter at a time.
 # The new word you get in each step must be in the dictionary.
+# EXAMPLE
+# Input: DAMP, LIKE
+# Output: DAMP -> LAMP -> LIMP -> LIME -> LIKE
 
 class TransformWord
 
@@ -31,7 +34,7 @@ class TransformWord
           end
           return list.reverse
         end
-        if dic_map.has_key?(word) && !visited.has_key?(word)
+        if dic_map[word] && !visited[word]
           queue << word
           visited[word] = true
           backtrack_map[word] = v # word is transformed from v
@@ -45,11 +48,11 @@ class TransformWord
   def self.transformable_words(word)
     words = []
     (0..word.size-1).each do |i|
-      word_dup = word.dup
       ('a'..'z').each do |c|
+        word_dup = word.dup
         if word[i] != c
           word_dup[i] = c
-          words << word_dup.dup
+          words << word_dup
         end
       end
     end

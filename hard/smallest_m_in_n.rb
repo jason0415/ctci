@@ -1,56 +1,59 @@
+# Describe an algorithm to find the smallest one million numbers in one billion
+# numbers. Assume that the computer memory can hold all one billion numbers.
+
 class SmallestMInN
 
   # O(n)
-  def self.find(array, m)
-    return array if m > array.size-1
-    mth_smallest = mth_smallest(array, m)
+  def self.find(a, m)
+    return a if m > a.size-1
+    mth_smallest = mth_smallest(a, m)
     smallest_m = []
-    array.each do |item|
+    a.each do |item|
       smallest_m << item if item < mth_smallest
     end
     smallest_m
   end
 
   private
-  def self.mth_smallest(array, m)
-    array.shuffle!
+  def self.mth_smallest(a, m)
+    a.shuffle!
     left = 0
-    right = array.size - 1
+    right = a.size - 1
     while left < right
-      j = partition(array, left, right)
+      j = partition(a, left, right)
       if m < j
         right = j - 1
       elsif m > j
         left = j + 1
       else
-        return array[m]
+        break
       end
     end
-    array[m]
+    a[m]
   end
-  def self.partition(array, left, right)
-    pivot = array[left]
+  def self.partition(a, left, right)
+    pivot = a[left]
     i = left + 1
     j = right
 
     loop do
-      while array[i] < pivot
+      while a[i] < pivot
         i += 1
         break if i == right + 1
       end
 
-      while array[j] > pivot
+      while a[j] > pivot
         j -= 1
       end
 
       break if i >= j
 
-      array[i], array[j] = array[j], array[i]
+      a[i], a[j] = a[j], a[i]
 
       i += 1
       j -= 1
     end
-    array[left], array[j] = array[j], array[left]
+    a[left], a[j] = a[j], a[left]
     j
   end
 
