@@ -5,13 +5,10 @@ class UniqueChars
 
   def self.unique?(str)
     return false if str.size > 256
-    flags = Array.new(256) # Assume ASCII
-    (0..str.size-1).each do |i|
-      if flags[str[i].ord]
-        return false
-      else
-        flags[str[i].ord] = true
-      end
+    flags = Array.new(256, false) # Assume ASCII
+    str.chars.each do |c|
+      return false if flags[c.ord]
+      flags[c.ord] = true
     end
     true
   end

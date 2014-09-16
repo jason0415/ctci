@@ -10,7 +10,7 @@ Answer:
 Two ways to avoid collision: clockwise and counter clockwise
 The probability of clockwise is 1/2*1/2*1/2 = 1/8
 The probability of counter clockwise is 1/2*1/2*1/2 = 1/8
-So, the probability of collision is: 1-1/8*1/8 = 3/4
+So, the probability of collision is: 1-1/8-1/8 = 3/4
 
 For an n-vertex polygon:
 1-(1/2)^n-1

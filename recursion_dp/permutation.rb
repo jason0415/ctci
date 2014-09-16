@@ -21,8 +21,8 @@ class Permutation
 
   private
   def self.find_helper(array, i, perm)
-    if i == 0
-      perm << array[i].to_s
+    if i < 0
+      perm << ''
       return
     end
     find_helper(array, i-1, perm)

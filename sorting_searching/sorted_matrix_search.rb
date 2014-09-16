@@ -24,7 +24,7 @@ class SortedMatrixSearch
 
   private
   def self.find_helper(matrix, key, i, j)
-    return [] if i < 0 || j < 0
+    return [] if i < 0 || j < 0 || i > matrix.size-1 || j > matrix[0].size-1
     if key < matrix[i][j]
       find_helper(matrix, key, i, j-1)
     elsif key > matrix[i][j]

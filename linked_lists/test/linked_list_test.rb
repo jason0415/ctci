@@ -31,24 +31,15 @@ puts "#{k}th from last: #{KthFromLast.kth_from_last(list, k)}"
 rand = rand(0..9)
 puts "Partition by #{rand}: #{Partition.partition(list, rand).keys}"
 
-list2 = LinkedList.new
-list2.insert(0)
-list2.insert(1)
-list2.insert(2)
-list2.insert(3)
-list2.insert(4)
-puts "list2: #{list2.keys.inspect}"
-puts "After removing middle from the list2: #{DeleteMiddle.delete_middle!(list2)}"
-puts list2.keys.inspect
-
 list3 = LinkedList.new
 list4 = LinkedList.new
-list3.append(7)
-list3.append(1)
-list3.append(6)
-list4.append(5)
+list3.append(9)
+list3.append(9)
+list3.append(9)
+list3.append(9)
 list4.append(9)
-# list4.append(3)
+list4.append(9)
+# list4.append(9)
 puts "Sum of #{list3.keys} and #{list4.keys} is #{SumTwoLists.sum(list3, list4)}"
 
 list5 = LinkedList.new

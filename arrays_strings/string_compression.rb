@@ -6,7 +6,7 @@
 class StringCompression
 
   def self.convert(str)
-    return if str.nil?
+    return str if str.nil? || str.size < 3
     new_str = ''
     i = 0
     until i == str.size

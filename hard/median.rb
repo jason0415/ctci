@@ -53,7 +53,7 @@ class Median
 
   def insert(item)
     if @min_heap.size == @max_heap.size
-      if !@min_heap.peek.nil? && item > @min_heap.peek
+      if !@min_heap.empty? && item > @min_heap.peek
         @max_heap.push(@min_heap.pop)
         @min_heap.push(item)
       else

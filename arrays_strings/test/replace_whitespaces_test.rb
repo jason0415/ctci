@@ -1,3 +1,3 @@
 require '../replace_whitespaces'
 
-puts "Replace whitespaces with %20 in 'Mr John Smith  ': #{ReplaceWhitespaces.replace('Mr John Smith  ', '%20')}"
+puts "Replace whitespaces with %20 in 'Mr John Smith  ': #{ReplaceWhitespaces.replace!('hello world     ', 11)}"

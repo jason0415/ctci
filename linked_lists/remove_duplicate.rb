@@ -7,43 +7,23 @@ class RemoveDuplicate
   # Without hash table
   def self.remove_duplicate!(list)
     return if list.nil?
-    current = list.head
-    until current.nil?
-      runner = current
-      until runner.next.nil?
-        if current.key == runner.next.key
-          runner.next = runner.next.next
+    first, second = list.head, list.head
+    until first.next.nil?
+      until second.next.nil?
+        if first.key == second.next.key
+          second.next = second.next.next
         else
-          runner = runner.next
+          second = second.next
         end
       end
-      current = current.next
+      first = first.next
+      second = first
     end
-  end
-
-  # Without hash table
-  def self.remove_duplicate2!(list)
-    return if list.nil? || list.head.nil?
-    c = list.head
-    r = list.head.next
-    p = list.head
-    until c.next.nil?
-      until r.nil?
-        if c.key == r.key
-          p.next = r.next
-        else
-          p = r
-        end
-        r = r.next
-      end
-      c = c.next
-      p = c
-      r = c.next
-    end
+    list
   end
 
   # With hash table
-  def self.remove_duplicate3!(list)
+  def self.remove_duplicate2!(list)
     return if list.nil?
     hash = {}
     current = list.head

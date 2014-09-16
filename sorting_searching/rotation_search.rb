@@ -31,12 +31,11 @@ class RotationSearch
       else
         find_helper(a, key, from, mid-1)
       end
-    else # Left half is all repeats
+    else # Left half are all repeats
       if a[mid] == a[to] # both leftmost key and rightmost key are the same as middle key
                          # eg. [1,1,1,1,2,3,1], [1,2,3,1,1,1,1] => we need to search for both sides
         result = find_helper(a, key, from, mid-1)
-        result = find_helper(a, key, mid+1, to) if result.nil?
-        result
+        find_helper(a, key, mid+1, to) if result.nil?
       else # If rightmost key is different than middle key, search right side
         find_helper(a, key, mid+1, to)
       end

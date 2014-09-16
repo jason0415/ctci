@@ -8,17 +8,19 @@
 
 class ReplaceWhitespaces
 
-  # With extra space
-  def self.replace(str, replacement)
-    new_str = ''
-    str.chars.each do |c|
-      if c != ' '
-        new_str << c
+  def self.replace!(str, i)
+    j = str.size-1
+    until i < 0
+      if str[i] == ' '
+        str[j],str[j-1],str[j-2] = '0','2','%'
+        j -= 3
       else
-        new_str << replacement
+        str[j] = str[i]
+        j -= 1
       end
+      i -= 1
     end
-    new_str
+    str
   end
 
 end

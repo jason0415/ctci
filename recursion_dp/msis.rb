@@ -21,7 +21,7 @@ class MSIS
       end
     end
 
-    # puts dp.max
+    # puts dp.inspect
     combinations.max_by { |list| sum_array(list) }
   end
 

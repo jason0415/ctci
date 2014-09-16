@@ -22,24 +22,30 @@ class SumTwoLists
     current1 = list1.head
     current2 = list2.head
     result = LinkedList.new
-    carry = 0
+    c = 0
     until current1.nil? || current2.nil?
-      sum = current1.key + current2.key + carry
+      sum = current1.key + current2.key + c
       d = sum % 10
-      carry = sum / 10
+      c = sum / 10
       result.append(d)
       current1 = current1.next
       current2 = current2.next
     end
-    unless current1.nil?
-      result.append(carry+current1.key)
+    until current1.nil?
+      sum = c + current1.key
+      d = sum % 10
+      c = sum / 10
+      result.append(d)
+      current1 = current1.next
     end
-    unless current2.nil?
-      result.append(carry+current2.key)
+    until current2.nil?
+      sum = c + current2.key
+      d = sum % 10
+      c = sum / 10
+      result.append(d)
+      current2 = current2.next
     end
-    if carry != 0 && current1.nil? && current2.nil?
-      result.append(carry)
-    end
+    result.append(c) unless c == 0
     result.keys
   end
 

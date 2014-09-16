@@ -20,7 +20,7 @@ class MagicIndex
 
   private
   def self.find_helper(array, from, to)
-    return nil if from > to
+    return if from > to
     mid = (from + to) / 2
     if array[mid] > mid
       find_helper(array, from, mid-1)
@@ -32,16 +32,14 @@ class MagicIndex
   end
 
   def self.find_not_distinct_helper(array, from, to)
-    return nil if from > to
+    return if from > to
     mid = (from + to) / 2
     if array[mid] > mid
       index = find_helper(array, from, mid-1)
-      index = find_helper(array, array[mid], to) if index.nil?
-      index
+      find_helper(array, array[mid], to) if index.nil?
     elsif array[mid] < mid
       index = find_helper(array, mid+1, to)
-      index = find_helper(array, from, array[mid]) if index.nil?
-      index
+      find_helper(array, from, array[mid]) if index.nil?
     else
       mid
     end

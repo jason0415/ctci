@@ -47,14 +47,14 @@ class LongestWordMadeOfOthers
   # we would recursively see if we can build the right side from the
   # other elements in the array.
   # Dynamic programming (we need to sort the array first)
-  def self.made_of_words?(word, origial_word, hash)
-    return hash[word] if hash.has_key?(word) && !origial_word
+  def self.made_of_words?(word, original_word, hash)
+    return true if hash[word] && !original_word
     (0..word.size-2).each do |i|
       left = word[0..i]
       right = word[i+1..word.size-1]
       return true if hash[left] && made_of_words?(right, false, hash)
     end
-    hash[word] = false # We have to sort the array
+    hash[word] = false # Cache the results
     false
   end
 

@@ -3,35 +3,23 @@
 
 class MergeSubarray
 
-  def self.merge!(a=[], b=[], last_a, last_b)
-    i = last_a
-    j = last_b
-    pos = a.size-1
-    loop do
-      break if i < 0 || j < 0
-      if a[i] > b[j]
-        a[pos] = a[i]
-        i -= 1
-      elsif a[i] < b[j]
-        a[pos] = b[j]
-        j -= 1
+  def self.merge!(a, size_a, b)
+    return if a.nil? || b.nil?
+    c = size_a-1
+    i, j = a.size-1, b.size-1
+    until c < 0 || j < 0
+      if a[c] > b[j]
+        a[i] = a[c]
+        c -= 1
       else
-        a[pos], a[pos-1] = a[i],a[i]
-        i -= 1
+        a[i] = b[j]
         j -= 1
-        pos -= 1
       end
-      pos -= 1
-    end
-
-    until i < 0
-      a[pos] = a[i]
-      pos -= 1
       i -= 1
     end
     until j < 0
-      a[pos] = b[j]
-      pos -= 1
+      a[i] = b[j]
+      i -= 1
       j -= 1
     end
     a

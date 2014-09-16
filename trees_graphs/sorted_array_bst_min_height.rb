@@ -3,8 +3,10 @@
 
 class SortedArrayBSTMinHeight
 
-  def self.create(bst, sorted_array)
+  def self.create(sorted_array)
+    bst = BinarySearchTree.new
     create_helper(bst, sorted_array, 0, sorted_array.size-1)
+    bst
   end
 
   private

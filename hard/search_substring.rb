@@ -34,7 +34,7 @@ class SearchSubstring
     private
     def insert_helper(str, current, d)
       current = Node.new if current.nil?
-      return current if d == str.length
+      return current if d == str.size
       current.next[str[d].ord-'a'.ord] = insert_helper(str, current.next[str[d].ord-'a'.ord], d+1)
       current
     end

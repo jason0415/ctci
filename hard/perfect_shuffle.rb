@@ -4,7 +4,8 @@
 
 class PerfectShuffle
 
-  def self.shuffle!(a)
+  def self.shuffle!(a=[])
+    return if a.nil?
     (0..a.size-1).each do |i|
       r = rand(0..i)
       a[i], a[r] = a[r], a[i]

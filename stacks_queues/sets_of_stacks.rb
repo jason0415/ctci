@@ -6,41 +6,41 @@
 # pop() should behave identically to a single stack (that is, pop()
 # should return the same values as it would if there were just a single stack).
 
+# FOLLOW UP
+# Implement a function popAt(int index) which performs a pop operation on
+# a specific sub-stack.
+
 class SetsOfStacks
 
   THRESHOLD = 3
 
   def initialize
     @stacks = []
+    @current_stack = 0
   end
 
   def push(key)
-    stack = last_stack
-    if stack.nil? || full?(stack)
-      stack = []
-      stack << key
-      @stacks << stack
+    @current_stack += 1 if full?
+    if @stacks[@current_stack].nil?
+      @stacks[@current_stack] = [key]
     else
-      stack << key
+      @stacks[@current_stack] << key
     end
   end
 
   def pop
-    stack = last_stack
-    return nil if stack.nil?
-    item = stack.pop
-    @stacks.pop if stack.empty?
+    item = @stacks[@current_stack].pop
+    @current_stack -= 1 if empty? && !item.nil?
     item
   end
 
   private
-  def last_stack
-    @stacks.size == 0 ? nil : @stacks[@stacks.size-1]
+  def full?
+    return false if @stacks[@current_stack].nil?
+    @stacks[@current_stack].size == 2
   end
-
-  def full?(stack)
-    return false if stack.nil?
-    stack.size == THRESHOLD
+  def empty?
+    @stacks[@current_stack].nil? || @stacks[@current_stack].size == 0
   end
 
 end

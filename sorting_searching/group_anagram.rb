@@ -7,7 +7,7 @@ class GroupAnagram
     hash = {}
     a.each do |str|
       sorted_str = str.chars.sort.join
-      unless hash.has_key?(sorted_str)
+      if hash[sorted_str].nil?
         hash[sorted_str] = []
       end
       hash[sorted_str] << str
@@ -20,6 +20,7 @@ class GroupAnagram
         i += 1
       end
     end
+    a
   end
 
 end

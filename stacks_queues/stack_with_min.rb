@@ -9,9 +9,9 @@ class StackWithMin
     @min_stack = []
   end
 
-  def push(value)
-    @stack << value
-    @min_stack << value if @min_stack.empty? || value < @min_stack.last
+  def push(key)
+    @stack << key
+    @min_stack << key if @min_stack.empty? || key < @min_stack.last
   end
 
   def pop

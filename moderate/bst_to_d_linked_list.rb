@@ -16,7 +16,7 @@ class BSTtoDLinkedList
   # O(n)
   # Return the head
   def self.convert(current)
-    return nil if current.nil?
+    return if current.nil?
     left = convert(current.left)
     right = convert(current.right)
     concat(tail(left), current) unless left.nil?
@@ -27,7 +27,6 @@ class BSTtoDLinkedList
   private
   # Find largest element
   def self.tail(current)
-    return nil if current.nil?
     until current.right.nil?
       current = current.right
     end

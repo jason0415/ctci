@@ -32,7 +32,6 @@ class StackWithSort
       buffer_stack << item
     end
 
-    #@stack.clear
     until buffer_stack.empty?
       @stack << buffer_stack.pop
     end

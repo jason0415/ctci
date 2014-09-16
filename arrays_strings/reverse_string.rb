@@ -1,11 +1,10 @@
-# Implement a function void reverse(char* str) in C or C++ which reverses a nullterminated
+# Implement a function void reverse(char* str) in C or C++ which reverses a null terminated
 # string.
 
 class ReverseString
 
   def self.reverse!(str)
-    i = 0
-    j = str.size - 1
+    i, j = 0, str.size-1
     until i >= j
       str[i], str[j] = str[j], str[i]
       i += 1
@@ -19,9 +18,9 @@ class ReverseString
   end
 
   private
-  def self.reverse2_helper!(str, loc)
-    return '' if loc == str.size
-    reverse2_helper!(str, loc+1) + str[loc]
+  def self.reverse2_helper!(str, i)
+    return '' if i == str.size
+    reverse2_helper!(str, i+1) + str[i]
   end
 
 end

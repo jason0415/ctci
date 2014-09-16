@@ -6,13 +6,10 @@ class CountWay
 
   # O(3^n)
   def self.count_way(n)
-    if n < 0
-      0
-    elsif n == 0
-      1
-    else
-      count_way(n-1) + count_way(n-2) + count_way(n-3)
-    end
+    return 1 if n == 1
+    return 2 if n == 2
+    return 4 if n == 3
+    count_way(n-1) + count_way(n-2) + count_way(n-3)
   end
 
   # O(n)

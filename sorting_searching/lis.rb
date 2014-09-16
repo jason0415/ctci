@@ -9,8 +9,7 @@ class LIS
   def self.find(a=[])
     return [] if a.nil? || a.empty?
     dp = Array.new(a.size, 1)
-    combinations = Array.new(a.size) { [] }
-    combinations[0] = [a[0]]
+    combinations = a.zip
 
     (1..a.size-1).each do |i|
       (0..i-1).each do |j|
@@ -21,7 +20,8 @@ class LIS
       end
     end
 
-    # puts dp.max
+    # puts dp.inspect
+    # puts combinations.inspect
     combinations.max_by { |list| list.length }
   end
 
