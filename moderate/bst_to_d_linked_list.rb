@@ -13,7 +13,7 @@
 
 class BSTtoDLinkedList
 
-  # O(n)
+  # O(n^2)
   # Return the head
   def self.convert(current)
     return if current.nil?

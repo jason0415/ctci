@@ -7,7 +7,6 @@ class MSIS
   # Dynamic programming
   # dp is an array that holds maximum sum ends at i
   def self.find(a=[])
-    return [] if a.nil? || a.empty?
     dp = a.dup
     combinations = Array.new(a.size) {[]}
     combinations[0] = [a[0]]

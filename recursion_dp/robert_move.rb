@@ -10,7 +10,8 @@ class RobertMove
 
   # O(2^n)
   def self.count(x, y)
-    return 1 if x == 1 || y == 1
+    return 0 if x < 0 || y < 0
+    return 1 if (x==1 && y==0) || (x==0 && y==1)
     count(x-1, y) + count(x, y-1)
   end
 
@@ -23,7 +24,8 @@ class RobertMove
 
   private
   def self.count_dp_helper(x, y, dp)
-    return 1 if x == 1 || y == 1
+    return 0 if x < 0 || y < 0
+    return 1 if (x==1 && y==0) || (y==1 && x==0)
     return dp[[x,y]] unless dp[[x,y]].nil?
     dp[[x,y]] = count(x-1, y) + count(x, y-1)
     dp[[x,y]]

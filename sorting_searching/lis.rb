@@ -7,7 +7,6 @@ class LIS
   # Dynamic programming
   # dp is an array that holds longest length ends at i
   def self.find(a=[])
-    return [] if a.nil? || a.empty?
     dp = Array.new(a.size, 1)
     combinations = a.zip
 

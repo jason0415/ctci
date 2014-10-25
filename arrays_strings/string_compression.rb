@@ -5,23 +5,26 @@
 
 class StringCompression
 
-  def self.convert(str)
-    return str if str.nil? || str.size < 3
+  def self.convert!(str)
+    return str if str.size < 3
     new_str = ''
-    i = 0
-    until i == str.size
+    i, j = 0, 1
+    count = 1
+    until j >= str.size
       new_str << str[i]
-      j = i + 1
-      count = 1
       until str[i] != str[j]
         count += 1
         j += 1
         break if j == str.size
       end
       new_str << count.to_s
+      count = 1
       i = j
+      j = i + 1
     end
-    new_str.size < str.size ? new_str : str
+
+    str = new_str if new_str.size < str.size
+    str
   end
 
 end

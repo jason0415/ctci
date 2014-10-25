@@ -37,7 +37,7 @@ class SetsOfStacks
   private
   def full?
     return false if @stacks[@current_stack].nil?
-    @stacks[@current_stack].size == 2
+    @stacks[@current_stack].size == THRESHOLD
   end
   def empty?
     @stacks[@current_stack].nil? || @stacks[@current_stack].size == 0

@@ -4,7 +4,6 @@
 class SortedMatrixSearch
 
   def self.find(matrix, key)
-    return [] if matrix.nil?
     find_helper(matrix, key, 0, matrix[0].size-1)
   end
 

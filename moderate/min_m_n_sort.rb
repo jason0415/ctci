@@ -24,7 +24,6 @@ class MinMNSort
 
   # Do similar for n.
   def self.find(a=[])
-    return nil if a.nil?
     return [0,0] if a.size < 2
 
     m,n = 0,0

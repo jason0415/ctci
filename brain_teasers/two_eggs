@@ -6,6 +6,7 @@ Find n, while minimizing the number of drops for the worst case.
 
 Answer:
 x + (x-1) + (x-2) + ... + 1 = 100.
+=> x * (x+1) / 2 = 100
 => x ≈ 14
 
 We go to floor 14, then 27, then 39, ....This takes 14 steps in the worse case.

@@ -61,16 +61,16 @@ class InsertRank
     if key < current.key
       rank_helper(key, current.left)
     elsif key > current.key
-      1 + size(current) + rank_helper(key, current.right)
+      1 + current.count + rank_helper(key, current.right)
     else
-      size(current)
+      current.count
     end
   end
 
   # This method is convenient (if current is nil, return 0)
-  def size(current)
-    return 0 if current.nil?
-    current.count
-  end
+  # def size(current)
+  #   return 0 if current.nil?
+  #   current.count
+  # end
 
 end

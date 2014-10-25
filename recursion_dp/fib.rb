@@ -9,8 +9,7 @@ class Fib
   # O(n)
   # With dynamic programming
   def self.find_dp(n)
-    dp = []
-    dp[0], dp[1] = 0, 1
+    dp = [0,1]
     find_dp_helper(n, dp)
   end
 

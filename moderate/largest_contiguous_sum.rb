@@ -12,7 +12,6 @@ class LargestContiguousSum
 
   # Dynamic Programming
   def self.find(a)
-    return nil if a.nil?
     max_so_far, max_ending_here = 0, 0
     a.each do |item|
       max_ending_here += item

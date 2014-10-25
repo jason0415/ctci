@@ -5,10 +5,9 @@ class Permutation
   # O(n!)
   # The same as sub sets
   def self.find(str)
-    perm = []
-    array = str.chars.to_a
-    find_helper(array, array.size-1, perm)
-    perm
+    perms = []
+    find_helper(str, str.size-1, perms)
+    perms
   end
 
   # O(n!)
@@ -20,18 +19,18 @@ class Permutation
   end
 
   private
-  def self.find_helper(array, i, perm)
+  def self.find_helper(str, i, perms)
     if i < 0
-      perm << ''
+      perms << ''
       return
     end
-    find_helper(array, i-1, perm)
-    perm.size.times do
-      str = perm.shift # Take the front one
-      (0..str.size).each do |p|
-        str_copy = str.dup
-        str_copy.insert(p, array[i])
-        perm << str_copy # Append new to the end
+    find_helper(str, i-1, perms)
+    perms.size.times do
+      s = perms.shift # Take the front one
+      (0..s.size).each do |p|
+        s_copy = s.dup
+        s_copy.insert(p, str[i])
+        perms << s_copy # Append new to the end
       end
     end
   end

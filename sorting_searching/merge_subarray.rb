@@ -4,7 +4,6 @@
 class MergeSubarray
 
   def self.merge!(a, size_a, b)
-    return if a.nil? || b.nil?
     c = size_a-1
     i, j = a.size-1, b.size-1
     until c < 0 || j < 0

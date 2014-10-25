@@ -14,13 +14,13 @@ class ReverseString
   end
 
   def self.reverse2!(str)
-    reverse2_helper!(str, 0)
+    reverse2_helper!(str, str.size-1)
   end
 
   private
   def self.reverse2_helper!(str, i)
-    return '' if i == str.size
-    reverse2_helper!(str, i+1) + str[i]
+    return str[i] if i == 0
+    str[i] + reverse2_helper!(str, i-1)
   end
 
 end

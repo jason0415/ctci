@@ -72,7 +72,7 @@ class Median
   end
 
   def find
-    return nil if @max_heap.empty?
+    return if @max_heap.empty?
     if @min_heap.size == @max_heap.size
       (@min_heap.peek.to_f + @max_heap.peek.to_f)/2
     else

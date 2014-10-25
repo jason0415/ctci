@@ -20,13 +20,13 @@ class RotationSearch
     mid = (from+to)/2
     return mid if key == a[mid]
     if a[mid] > a[from] # Left side is sorted
-      if key >= a[from] && key <= a[mid] # Search on left
+      if key >= a[from] && key < a[mid] # Search on left
         find_helper(a, key, from, mid-1)
       else
         find_helper(a, key, mid+1, to)
       end
     elsif a[mid] < a[from] # Left side is not sorted, that means Right side is sorted
-      if key >= a[mid] && key <= a[to] # Search on right
+      if key > a[mid] && key <= a[to] # Search on right
         find_helper(a, key, mid+1, to)
       else
         find_helper(a, key, from, mid-1)

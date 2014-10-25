@@ -3,8 +3,8 @@
 class WhetherPermutation
 
   def self.permutation?(str1, str2)
+    return false unless str1.size == str2.size
     a, b = str1.dup, str2.dup
-    return false unless a.size == b.size
     a.chars.sort == b.chars.sort
   end
 
