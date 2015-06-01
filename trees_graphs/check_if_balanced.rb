@@ -16,8 +16,8 @@ class CheckIfBalanced
   # Efficient version
   # O(N)
   def self.balanced2?(current)
-    return false if check_height(current) == -1
-    true
+    return false if current.nil?
+    check_height(current) == -1 ? false : true
   end
 
   private

@@ -8,9 +8,10 @@ class GroupAnagram
     a.each do |str|
       sorted_str = str.chars.sort.join
       if hash[sorted_str].nil?
-        hash[sorted_str] = []
+        hash[sorted_str] = [str]
+      else
+        hash[sorted_str] << str
       end
-      hash[sorted_str] << str
     end
 
     i = 0

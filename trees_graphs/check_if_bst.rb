@@ -5,6 +5,7 @@ class CheckIfBST
   # left.data < current.data < right.data for each node is not sufficient
   # O(N)
   def self.bst?(current)
+    return false if current.nil?
     check_bst?(current, -999, 999)
   end
 

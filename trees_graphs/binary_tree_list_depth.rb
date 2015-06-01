@@ -6,7 +6,7 @@ class BinaryTreeListDepth
 
   # DFS solution
   def self.create(bt)
-    return nil if bt.nil?
+    return if bt.nil?
     root = bt.root
     list = []
     dfs(root, list, 0)

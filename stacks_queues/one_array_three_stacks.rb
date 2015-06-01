@@ -10,7 +10,7 @@ class OneArrayThreeStacks
 
   def push(num, key)
     raise 'Not a valid stack number!' unless [0,1,2].include? num
-    raise 'Out of stack!' if @current_stack_pointer[num] + 1 >= @stack_size
+    raise 'Out of stack!' if @current_stack_pointer[num] + 1 == @stack_size
     @current_stack_pointer[num] += 1
     @container[index_of_stack(num)] = key
   end

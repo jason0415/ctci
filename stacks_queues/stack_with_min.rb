@@ -16,9 +16,7 @@ class StackWithMin
 
   def pop
     item = @stack.pop
-    unless item.nil?
-      @min_stack.pop if @min_stack.last == item
-    end
+    @min_stack.pop if !item.nil? && @min_stack.last == item
     item
   end
 

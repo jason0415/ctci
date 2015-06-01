@@ -4,9 +4,9 @@
 class BSTFindNext
 
   def self.find_next(bst, key)
-    return nil if bst.nil?
+    return if bst.nil?
     current = bst.search(key)
-    return nil if current.nil?
+    return if current.nil?
 
     if current.right.nil?
       previous = nil

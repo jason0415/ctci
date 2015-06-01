@@ -29,7 +29,7 @@ k = rand(-5..12)
 puts "#{k}th from last: #{KthFromLast.kth_from_last(list, k)}"
 
 rand = rand(0..9)
-puts "Partition by #{rand}: #{Partition.partition(list, rand).keys}"
+puts "Partition by #{rand}: #{Partition.partition(list, rand).inspect}"
 
 list3 = LinkedList.new
 list4 = LinkedList.new

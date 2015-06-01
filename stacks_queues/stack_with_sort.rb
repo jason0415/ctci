@@ -24,12 +24,21 @@ class StackWithSort
   def sort!
     buffer_stack = []
     until @stack.empty?
-      item = @stack.pop
-      until buffer_stack.empty?
-        break if item < buffer_stack.last
-        @stack << buffer_stack.pop
+      if buffer_stack.empty?
+        buffer_stack << @stack.pop
+      else
+        item = @stack.pop
+        until buffer_stack.last < item
+          @stack << buffer_stack.pop
+        end
+        buffer_stack << item
       end
-      buffer_stack << item
+      # item = @stack.pop
+      # until buffer_stack.empty?
+      #   break if item < buffer_stack.last
+      #   @stack << buffer_stack.pop
+      # end
+      # buffer_stack << item
     end
 
     until buffer_stack.empty?

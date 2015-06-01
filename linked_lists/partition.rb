@@ -1,24 +1,39 @@
 # Write code to partition a linked list around a value x, such that all nodes less than
 # x come before all nodes greater than or equal to x.
 
-require_relative 'linked_list'
-
 class Partition
 
   def self.partition(list, x)
-    return nil if list.nil?
-    return nil unless x.is_a? Integer
-    new_list = LinkedList.new
+    return if list.nil?
+    return unless x.is_a? Integer
+    less_x_start, greater_x_start,
+        less_x_end, greater_x_end = nil, nil, nil, nil
     current = list.head
     until current.nil?
+      next_node = current.next
+      current.next = nil
       if current.key < x
-        new_list.insert(current.key)
+        if less_x_start.nil?
+          less_x_start = current
+          less_x_end = less_x_start
+        else
+          less_x_end.next = current
+          less_x_end = current
+        end
       else
-        new_list.append(current.key)
+        if greater_x_start.nil?
+          greater_x_start = current
+          greater_x_end = greater_x_start
+        else
+          greater_x_end.next = current
+          greater_x_end = current
+        end
       end
-      current = current.next
+      current = next_node
     end
-    new_list
+    return greater_x_start if less_x_start.nil?
+    less_x_end.next = greater_x_start
+    less_x_start
   end
 
 end

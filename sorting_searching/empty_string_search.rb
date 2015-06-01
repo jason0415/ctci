@@ -21,7 +21,7 @@ class EmptyStringSearch
       left = mid-1
       right = mid+1
       loop do
-        return nil if left < from && right > to
+        return if left < from && right > to
         if left >= from && a[left] != ''
           mid = left
           break

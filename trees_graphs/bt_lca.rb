@@ -10,14 +10,14 @@ class BTLca
   # Not necessary a bst
   # O(N)
   def self.find(root, key1, key2)
-    return nil unless BinarySearchTree.contains?(root, key1) &&
+    return unless BinarySearchTree.contains?(root, key1) &&
         BinarySearchTree.contains?(root, key2)
     find_helper(root, key1, key2)
   end
 
   private
   def self.find_helper(current, key1, key2)
-    return nil if current.nil?
+    return if current.nil?
     return current.key if current.key == key1 || current.key == key2
 
     key1_on_left = BinarySearchTree.contains?(current.left, key1)

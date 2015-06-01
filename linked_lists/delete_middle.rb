@@ -6,7 +6,7 @@
 class DeleteMiddle
 
   def self.delete_middle!(node)
-    return false if node.nil? || node.next.nil?
+    return if node.nil? || node.next.nil?
     node.key == node.next.key
     node.next = node.next.next
   end

@@ -28,6 +28,7 @@ class SubSets
     sets_copy.collect! { |set| set + str[i] }
     sets.concat(sets_copy)
   end
+
   def self.find_helper2(a, i, sets)
     if i < 0
       sets << []
